@@ -9,7 +9,7 @@ import {Skills} from "@/app/components/Skills";
 import {About} from "@/app/components/About";
 import {MyProvider, useMyContext} from '@/app/components/MyContext';
 
-export const DisplayTab = () =>{
+const DisplayTab = () =>{
     const { value } = useMyContext();
     switch (value){
         case "projects":
