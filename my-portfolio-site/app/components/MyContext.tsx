@@ -1,7 +1,10 @@
 import React, { createContext, useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 
-const MyContext = createContext({});
+const MyContext = createContext({
+    value: '',
+    setValue: () => {}
+});
 
 export const MyProvider = ({ children }) => {
     const [value, setValue] = useState('about');
