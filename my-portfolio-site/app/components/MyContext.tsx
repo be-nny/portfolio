@@ -1,10 +1,14 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, {createContext, useState, useContext, ReactNode} from 'react';
 import PropTypes from 'prop-types';
 
 const MyContext = createContext({
     value: '',
     setValue: (value: string) => {}
 });
+
+interface MyProviderProps {
+    children: ReactNode;
+}
 
 export const MyProvider = ({ children }) => {
     const [value, setValue] = useState('about');
