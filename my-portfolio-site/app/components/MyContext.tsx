@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const MyContext = createContext({
     value: '',
-    setValue: () => {}
+    setValue: (value: string) => {}
 });
 
 export const MyProvider = ({ children }) => {
