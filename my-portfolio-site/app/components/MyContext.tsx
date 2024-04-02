@@ -10,7 +10,7 @@ interface MyProviderProps {
     children: ReactNode;
 }
 
-export const MyProvider = ({ children }) => {
+export const MyProvider = ({ children }: { children: ReactNode }) => {
     const [value, setValue] = useState('about');
 
     return (
