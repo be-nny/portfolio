@@ -6,7 +6,7 @@ import { useMyContext } from './MyContext';
 export const Menu = () => {
     const { setValue } = useMyContext();
 
-    const handleClick = (value, event) => {
+    const handleClick = (value: string, event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault();
         setValue(value);
     };
