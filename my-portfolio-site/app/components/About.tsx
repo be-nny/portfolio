@@ -15,6 +15,7 @@ export const About = () => {
                 </div>
                 <hr className="my-4"/>
                 <h2 className={styles.subTitle}>Contact Information</h2>
+                <p className={styles.subText}>If you need to get in touch, feel free to contact me!</p>
                 <div className="card" style={{width: "18rem"}}>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">ben.abboty1717@gmail.com</li>
