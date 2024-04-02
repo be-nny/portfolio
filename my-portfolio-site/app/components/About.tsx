@@ -4,7 +4,8 @@ export const About = () => {
     return(
         <div className={styles.aboutLayout}>
             <div className="jumbotron">
-                <h1 className={styles.titleText}>Hello, world!</h1>
+                {/*<h1 className={styles.titleText}>Hello, world!</h1>*/}
+                <hr className="my-4"/>
                 <div className={styles.subText}>
                     <p>
                         Welcome to my portfolio!
@@ -18,7 +19,7 @@ export const About = () => {
                 <p className={styles.subText}>If you need to get in touch, feel free to contact me!</p>
                 <div className="card" style={{width: "18rem"}}>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item">ben.abboty1717@gmail.com</li>
+                        <li className="list-group-item">ben.abbott1717@gmail.com</li>
                         <li className="list-group-item">ba438@exeter.ac.uk</li>
                     </ul>
                 </div>

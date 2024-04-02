@@ -1,6 +1,5 @@
 .card{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
 
 .cardImgTop{
     padding:10px;
@@ -10,11 +9,13 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 25px;
     grid-area: auto;
+    padding-top: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    height:400px;
+    padding-bottom: 50px;
+    height:500px;
     overflow: scroll;
 }
 
