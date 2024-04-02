@@ -1,0 +1,32 @@
+.socialsCtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -80%);
+    padding: 10px;
+}
+
+.socialsList li {
+    display: inline-block;
+
+}
+
+.socialsItem {
+    margin: 10px;
+}
+
+.socialsLink {
+    text-decoration: none;
+    display: block;
+}
+
+.socialsItem i{
+    color: black;
+    font-size: 30px;
+    transition: ease-in-out 0.25s;
+}
+
+.socialsItem i:hover{
+    font-size: 40px;
+}

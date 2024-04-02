@@ -1,0 +1,11 @@
+.skillsGridLayout {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-area: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    height:400px;
+    overflow: scroll;
+}

@@ -1,0 +1,23 @@
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cardImgTop{
+    padding:10px;
+}
+
+.categoryGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-area: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    height:400px;
+    overflow: scroll;
+}
+
+.card-link{
+    bottom: 0;
+}
