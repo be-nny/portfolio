@@ -97,13 +97,13 @@
 }
 
 .menuLink:hover:nth-child(1) {
-  background: #3b5998;
+  background: #c62d78;
 }
 
 .menuLink:hover:nth-child(1):before {
-  background: #365492;
+  background: #ab2a6a;
 }
 
 .menuLink:hover:nth-child(1):after {
-  background: #4a69ad;
+  background: #d63383;
 }

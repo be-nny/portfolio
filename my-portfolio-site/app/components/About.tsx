@@ -23,7 +23,7 @@ export const About = () => {
                 <h2 className={styles.subTitle}>Contact Me!</h2>
                 <div className={`${styles.commandLineHeader}`}>
                     <p>
-                        console last login @ {todaysDate()}
+                        <i className="bi bi-x-circle"></i> <i className="bi bi-slash-circle"></i> <i className="bi bi-plus-circle"></i> console last login @ {todaysDate()}
                     </p>
                 </div>
                 <div className={"commandLine"} contentEditable={"true"}>
@@ -96,7 +96,7 @@ function Console() {
               value={value}
               onChange={handleInput}
               onKeyPress={handleEnter}
-              style={{fontFamily: 'monospace', resize: 'none'}}
+              style={{fontFamily: 'monospace', resize: 'none', fontWeight: '700'}}
           />
         </div>
     );
