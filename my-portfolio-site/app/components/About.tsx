@@ -1,7 +1,7 @@
 import styles from './About.module.css';
 import ReactDOMServer from 'react-dom/server';
 
-import React, {Key, KeyboardEventHandler, useState} from "react";
+import React, {ChangeEventHandler, Key, KeyboardEventHandler, useState} from "react";
 
 export const About = () => {
     return(
@@ -54,7 +54,7 @@ function Console() {
     const [messageNum, setMessageNum] = useState(0);
     const [value, setValue] = useState(messages[0]);
 
-    const handleInput = (e) => {
+    const handleInput: React.ChangeEventHandler<HTMLTextAreaElement> = (e) => {
         const inputValue = e.target.value;
         if (!inputValue.startsWith(messages[messageNum])){
             setValue(messages[messageNum]);
