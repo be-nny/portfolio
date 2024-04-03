@@ -2,9 +2,10 @@
 
 .subText{
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
-    color: black;
+    color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -13,7 +14,7 @@
 }
 
 .titleText{
-    color: black;
+    color: #ffffff;
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
@@ -23,7 +24,7 @@
 }
 
 .subTitle{
-    color: black;
+    color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -33,6 +34,27 @@
 
 .aboutLayout {
     position: relative;
-    height:400px;
+    height:500px;
     overflow: scroll;
+}
+
+.commandLine{
+    outline: none;
+    border: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: 100px;
+}
+
+.commandLineHeader {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background: #141920;
+    color: #ffffff;
+    font-family: monospace, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
 }

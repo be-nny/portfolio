@@ -1,22 +1,31 @@
 .card{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
 .cardImgTop{
     padding:10px;
 }
 
+.cardLink{
+    text-decoration: none;
+}
+
 .categoryGrid {
+    background-color: #22252a;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
     grid-area: auto;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
+    padding: 50px 100px 50px;
     height:500px;
+    width: 160%;
     overflow: scroll;
+
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, 0);
 }
 
 .card-link{

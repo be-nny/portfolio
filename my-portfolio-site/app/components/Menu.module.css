@@ -3,12 +3,13 @@
 .menuList {
   position: relative;
   left: 50%;
-  transform: translate(-50%, 5%);
+  transform: translate(-50%, 10%);
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
+
 
 .menuItem {
   list-style: none;
@@ -17,13 +18,14 @@
 
 .menuItemText{
   width: auto;
+  text-shadow: -0.5px -0.5px 0 #ffffff, 0.5px -0.5px 0 #ffffff, -0.5px 0.5px 0 #ffffff, 0.5px 0.5px 0 #ffffff;
   position: absolute;
   font-size: 25px;
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 800;
-  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  /*text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);*/
 }
 
 .myWorkText{

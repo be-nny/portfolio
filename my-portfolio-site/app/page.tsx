@@ -66,10 +66,25 @@ export default function Home() {
                     />
                 </code>
             </div>
+            <style>
+                <style>
+                    {`
+                        .index-module_type__E-SaG::after {
+                            content: "";
+                            display: inline-block;
+                            width: 0.75em;
+                            border-bottom: 10px solid;
+                            position: relative;
+                            top: 5px; /* Adjust the value to move the underscore up or down */
+                            left: 5px;
+                        }   
+                    `}
+                </style>
+            </style>
             <br/>
             <div className={"console-file-name"}>hello-world{typingStatusLanguage}</div>
         </div>
-
+        <div className={"blur"}></div>
         <div className={"main-container"}>
             <Menu/>
             <DisplayTab/>
