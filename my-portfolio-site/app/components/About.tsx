@@ -82,7 +82,7 @@ function Console() {
                 console.log(email + "," + message + "," + confirm)
 
                 setMessageNum(0)
-                setValue(messages[0].substring((0, messages[0].length-1)))
+                setValue(messages[0].substring((messages[0].length-1)))
                 setEmail('')
                 setMessage('')
                 setConfirm('')
