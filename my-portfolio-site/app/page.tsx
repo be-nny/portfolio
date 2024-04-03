@@ -84,7 +84,7 @@ export default function Home() {
             <br/>
             <div className={"console-file-name"}>hello-world{typingStatusLanguage}</div>
         </div>
-        <div className={"blur"}></div>
+        {/*<div className={"blur"}></div>*/}
         <div className={"main-container"}>
             <Menu/>
             <DisplayTab/>
