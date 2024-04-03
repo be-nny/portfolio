@@ -1,5 +1,7 @@
 import styles from './About.module.css';
-import {useState} from "react";
+import ReactDOMServer from 'react-dom/server';
+
+import React, {Key, KeyboardEventHandler, useState} from "react";
 
 export const About = () => {
     return(
@@ -71,7 +73,7 @@ function Console() {
         }
     };
 
-    const handleEnter = (e) => {
+    const handleEnter = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
         if(e.key === 'Enter'){
             if(messageNum < 2){
                 console.log(value)
