@@ -29,6 +29,11 @@ export const About = () => {
                 <div className={"commandLine"} contentEditable={"true"}>
                     <Console />
                 </div>
+                <div className={`${styles.subText}`}>
+                    <p>
+                        Got a longer message? Email me at <strong>ben.abbott1717@gmail.com</strong>
+                    </p>
+                </div>
             </div>
         </div>
     );

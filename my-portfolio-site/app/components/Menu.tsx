@@ -16,7 +16,7 @@ export const Menu = () => {
             <ul className={styles.menuList}>
                 <li className={styles.menuItem}>
                     <a href="" className={styles.menuLink} onClick={(event) => handleClick('projects', event)}>
-                        <i className={`bi bi-award ${styles.menuIcon}`} />
+                        <i className={`bi bi-code-slash ${styles.menuIcon}`} />
                     </a>
                     <div className={`${styles.menuItemText} ${styles.myWorkText}`}>Projects</div>
                 </li>
