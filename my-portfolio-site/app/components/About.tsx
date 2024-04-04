@@ -121,9 +121,15 @@ function Console() {
         .then((response) => {
             setValue("SUCCESS! Email sent :) " + response.status + + " " + response.text)
             console.log('SUCCESS! Email Sent :) ', response.status + " " + response.text);
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         }, (error) => {
             setValue("FATAL! Email not sent :( " + error)
             console.log('FAILED...', error);
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         });
     };
 
