@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import emailjs from '@emailjs/browser';
 import ReactDOMServer from 'react-dom/server';
 
 import React, {ChangeEventHandler, Key, KeyboardEventHandler, useState} from "react";
@@ -7,7 +8,7 @@ export const About = () => {
     return(
         <div className={styles.aboutLayout}>
             <div className="jumbotron">
-                {/*<h1 className={styles.titleText}>Hello, world!</h1>*/}
+                <h1 className={styles.titleText}>My Portfolio</h1>
                 <hr className="my-4" style={{color:"#ffffff"}}/>
                 <div className={`${styles.subText}`}>
                     <p>
@@ -81,10 +82,11 @@ function Console() {
     const handleEnter = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
         if(e.key === 'Enter'){
             if(messageNum < 2){
-                console.log(value)
                 setMessageNum(messageNum + 1)
             } else{
-                console.log(email + "," + message + "," + confirm)
+                if(confirm.toLowerCase() == "y"){
+                    sendEmail(e)
+                }
 
                 setMessageNum(0)
                 setValue(messages[0].substring((messages[0].length-1)))
@@ -94,6 +96,36 @@ function Console() {
             }
         }
     }
+
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.init({
+            publicKey: '8XyY5W5it9lwzL929',
+            blockHeadless: true,
+            blockList: {},
+            limitRate: {
+                id: 'app',
+                throttle: 1000,
+            },
+        });
+
+        var templateParams = {
+            from_name: email,
+            to_name: "ben.abbott1717@gmail.com",
+            message: message
+        };
+        setValue("attempting to send email...")
+        emailjs.send("service_77zuzrd","template_ks6cur1", templateParams,"8XyY5W5it9lwzL929",{
+        }).then((response) => {
+            setValue("SUCCESS! Email sent :) " + response.status + + " " + response.text)
+            console.log('SUCCESS! Email Sent :) ', response.status + " " + response.text);
+        }, (error) => {
+            setValue("FATAL! Email not sent :( " + error)
+            console.log('FAILED...', error);
+        });
+    };
 
     return (
         <div>
