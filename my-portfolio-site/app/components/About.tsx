@@ -99,7 +99,7 @@ function Console() {
 
 
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
         e.preventDefault();
         emailjs.init({
             publicKey: '8XyY5W5it9lwzL929',
@@ -117,8 +117,8 @@ function Console() {
             message: message
         };
         setValue("attempting to send email...")
-        emailjs.send("service_77zuzrd","template_ks6cur1", templateParams,"8XyY5W5it9lwzL929",{
-        }).then((response) => {
+        emailjs.send("service_77zuzrd","template_ks6cur1", templateParams,"8XyY5W5it9lwzL929")
+        .then((response) => {
             setValue("SUCCESS! Email sent :) " + response.status + + " " + response.text)
             console.log('SUCCESS! Email Sent :) ', response.status + " " + response.text);
         }, (error) => {
