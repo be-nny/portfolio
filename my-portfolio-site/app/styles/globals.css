@@ -50,7 +50,7 @@ body{
 .main-container{
     background-color: #141920;
     position: relative;
-    width: 65%;
+    width: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 10%);
