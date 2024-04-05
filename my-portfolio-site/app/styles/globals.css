@@ -98,3 +98,21 @@ textarea{
     border-bottom-left-radius: 5px;
     padding: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .console-text {
+        font-size: 10px;
+        font-weight: 900;
+    }
+    .console-file-name{
+        font-size: 10px;
+        padding-top: 10px;
+        font-weight: 400;
+    }
+    .main-container{
+        width: 75%;
+    }
+    textarea{
+        font-size: 1px;
+    }
+}

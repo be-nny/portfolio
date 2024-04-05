@@ -45,3 +45,14 @@
     font-variant: normal;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 600px) {
+    .categoryGrid {
+        grid-template-columns: 1fr;
+        padding: 0 43px 43px;
+    }
+
+    .titleText{
+        padding-top: 50px;
+    }
+}
