@@ -45,7 +45,7 @@
 @media only screen and (max-width: 600px) {
     .categoryGrid {
         grid-template-columns: 1fr;
-        padding: 0;
+        padding: 0px;
     }
 
     .titleText{
@@ -55,4 +55,7 @@
         padding: 10px;
     }
 
+    .card:hover {
+        transform: scale(1);
+    }
 }
