@@ -35,3 +35,13 @@
 .card-link{
     bottom: 0;
 }
+
+.titleText{
+    color: #ffffff;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}

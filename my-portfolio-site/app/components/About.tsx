@@ -6,34 +6,36 @@ import React, {ChangeEventHandler, Key, KeyboardEventHandler, useState} from "re
 
 export const About = () => {
     return(
-        <div className={styles.aboutLayout}>
-            <div className="jumbotron">
-                <h1 className={styles.titleText}>My Portfolio</h1>
-                <hr className="my-4" style={{color:"#ffffff"}}/>
-                <div className={`${styles.subText}`}>
-                    <p>
-                        Welcome to my portfolio!
-                        My name is Ben Abbott and here you can find some of my projects and skills.
-                        I'm a 2nd year computer science student at the University of Exeter.
-                        My strengths are primarily back-end related but I also have full-stack experience and my strongest
-                        languages are <code>Java</code> and <code>Python</code>. You can see my <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"}>LinkedIn</a> for my full list of
-                        experience. If you need to get in touch, feel free to contact me!
-                    </p>
-                </div>
-                <hr className="my-4" style={{color:"#ffffff"}}/>
-                <h2 className={styles.subTitle}>Contact Me!</h2>
-                <div className={`${styles.commandLineHeader}`}>
-                    <p>
-                        <i className="bi bi-x-circle"></i> <i className="bi bi-slash-circle"></i> <i className="bi bi-plus-circle"></i> console last login @ {todaysDate()}
-                    </p>
-                </div>
-                <div className={"commandLine"} contentEditable={"true"}>
-                    <Console />
-                </div>
-                <div className={`${styles.subText}`}>
-                    <p>
-                        Got a longer message? Email me at <strong>ben.abbott1717@gmail.com</strong>
-                    </p>
+        <div>
+            <h1 className={styles.titleText}>My Portfolio</h1>
+            <hr className="my-4" style={{color:"#ffffff"}}/>
+            <div className={styles.aboutLayout}>
+                <div className="jumbotron">
+                    <div className={`${styles.subText}`}>
+                        <p>
+                            Welcome to my portfolio!
+                            My name is Ben Abbott and here you can find some of my projects and skills.
+                            I'm a 2nd year computer science student at the University of Exeter.
+                            My strengths are primarily back-end related but I also have full-stack experience and my strongest
+                            languages are <code>Java</code> and <code>Python</code>. You can see my <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"}>LinkedIn</a> for my full list of
+                            experience. If you need to get in touch, feel free to contact me!
+                        </p>
+                    </div>
+                    <hr className="my-4" style={{color:"#ffffff"}}/>
+                    <h2 className={styles.subTitle}>Contact Me!</h2>
+                    <div className={`${styles.commandLineHeader}`}>
+                        <p>
+                            <i className="bi bi-x-circle"></i> <i className="bi bi-slash-circle"></i> <i className="bi bi-plus-circle"></i> console last login @ {todaysDate()}
+                        </p>
+                    </div>
+                    <div className={"commandLine"} contentEditable={"true"}>
+                        <Console />
+                    </div>
+                    <div className={`${styles.subText}`}>
+                        <p>
+                            Got a longer message? Email me at <strong>ben.abbott1717@gmail.com</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

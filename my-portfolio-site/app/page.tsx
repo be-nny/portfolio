@@ -62,7 +62,6 @@ export default function Home() {
                         wrapper="span"
                         speed={50}
                         repeat={Infinity}
-                        preRenderFirstString={true}
                     />
                 </code>
             </div>
