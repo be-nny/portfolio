@@ -68,4 +68,9 @@
     .titleText{
         padding-top: 50px;
     }
+
+    .commandLineHeader {
+        padding-top: 5px;
+    }
+
 }
