@@ -9,7 +9,6 @@
 
 .socialsList li {
     display: inline-block;
-
 }
 
 .socialsItem {
@@ -29,4 +28,10 @@
 
 .socialsItem i:hover{
     font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .socialsCtn {
+        top: 60%;
+    }
 }
