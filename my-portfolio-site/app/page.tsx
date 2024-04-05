@@ -92,6 +92,13 @@ export default function Home() {
                 <div className={"copyright"}>Ben Abbott 2024© All Rights Reserved.</div>
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
     </MyProvider>
   );
 }
