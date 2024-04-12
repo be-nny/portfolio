@@ -29,6 +29,7 @@ const initiate = () => {
     controls.panSpeed = 1;
     controls.enableDamping = true;
     controls.maxZoom = 3000;
+    controls.enablePan = false;
 
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         controls.enableZoom = false
