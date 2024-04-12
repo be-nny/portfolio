@@ -29,10 +29,15 @@ const initiate = () => {
     controls.panSpeed = 1;
     controls.enableDamping = true;
     controls.maxZoom = 3000;
+
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         controls.enableZoom = false
+        camera.position.set(-4,10,10);
     }else{
         controls.enableZoom = true
+        camera.position.z = 10;
+        camera.position.y = 10;
+        camera.position.x = 5;
     }
     const light = new THREE.AmbientLight(0xEBE1CD, 3);
     light.position.set(10, 2, 10);
@@ -47,6 +52,9 @@ let loadedModel;
 const loader = new GLTFLoader();
 loader.load( '/3d/planet_earth/scene.gltf', function ( gltf ) {
         loadedModel = gltf;
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // loadedModel.scene.position.x = 4;
+        }
         loadedModel.scene.position.y = 0;
         scene.add(loadedModel.scene);
     }, function ( xhr ) {
