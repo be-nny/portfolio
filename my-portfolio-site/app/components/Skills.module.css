@@ -5,9 +5,6 @@
     grid-gap: 25px;
     grid-area: auto;
     padding: 20px;
-
-    height:500px;
-    overflow: scroll;
 }
 
 .card{
@@ -16,8 +13,9 @@
     padding: 10px;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.outline-primary{
+    background-color: #c62d78;
+    color: #c62d78;
 }
 
 .titleText{

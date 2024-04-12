@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {MyProvider} from "@/app/components/MyContext";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     //  33475b
     <html lang="en">
-        <body className={inter.className} style={{backgroundColor:"#141920"}}>{children}</body>
+        <body className={inter.className} style={{backgroundColor:"black"}}>{children}</body>
     </html>
   );
 }

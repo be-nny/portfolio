@@ -1,38 +1,33 @@
 import React from 'react';
-import styles from './Menu.module.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { useMyContext } from './MyContext';
+import Card from 'react-bootstrap/Card';
 
 export const Menu = () => {
-    const { setValue } = useMyContext();
-
-    const handleClick = (value: string, event: React.MouseEvent<HTMLAnchorElement>) => {
-        event.preventDefault();
-        setValue(value);
-    };
-
     return (
-        <div className={"SocialsLinksCtn"}>
-            <ul className={styles.menuList}>
-                <li className={styles.menuItem}>
-                    <a href="" className={styles.menuLink} onClick={(event) => handleClick('projects', event)}>
-                        <i className={`bi bi-code-slash ${styles.menuIcon}`} />
-                    </a>
-                    <div className={`${styles.menuItemText} ${styles.myWorkText}`}>Projects</div>
-                </li>
-                <li className={styles.menuItem}>
-                    <a href="" className={styles.menuLink}  onClick={(event) => handleClick('skills', event)}>
-                        <i className={`bi bi-graph-up-arrow ${styles.menuIcon}`} />
-                    </a>
-                    <div className={`${styles.menuItemText} ${styles.mySkillsText}`}>Skills</div>
-                </li>
-                <li className={styles.menuItem}>
-                    <a href="" className={styles.menuLink}  onClick={(event) => handleClick('about', event)}>
-                        <i className={`bi bi-person-circle ${styles.menuIcon}`} />
-                    </a>
-                    <div className={`${styles.menuItemText} ${styles.aboutMeText}`}>Me</div>
-                </li>
-            </ul>
-        </div>
+        <>
+            <Navbar bg="dark" data-bs-theme="dark" className="fixed-top">
+                <Container>
+                    <Nav className="me-auto" variant="underline">
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/projects">Projects</Nav.Link>
+                        <Nav.Link href="/skills">Skills</Nav.Link>
+                    </Nav>
+                    <Nav className="ml-auto">
+                        <Nav.Link href={"https://github.com/be-nny"}>
+                            <i className={"bi bi-github"}/>
+                        </Nav.Link>
+                        <Nav.Link href={"https://www.linkedin.com/in/ben-abbott-789034262/"}>
+                            <i className={"bi bi-linkedin"}/>
+                        </Nav.Link>
+                    </Nav>
+                    <Nav className="ml-auto">
+                        <Nav.Link className={"small"} href={"https://sketchfab.com/3d-models/planet-earth-bce3ea48781c4f02a8c52d2678220d07"}>Model Credit</Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
+        </>
     );
 };
