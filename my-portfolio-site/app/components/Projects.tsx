@@ -21,7 +21,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Python</code>, <code>CSS</code>, <code>Django</code>, <code>JavaScript</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/proj-iSABEL" variant="primary">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/proj-iSABEL">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
 
@@ -38,7 +38,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Python</code>, <code>Keras</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/CCD-keras" variant="primary">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/CCD-keras">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
 
@@ -56,7 +56,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Java</code>, <code>OpenCV</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/connect-four-robot" variant="primary">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/connect-four-robot">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
         </div>
