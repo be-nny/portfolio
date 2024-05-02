@@ -53,34 +53,27 @@
 
 }
 
-.commandLine{
-    outline: none;
-    border: none;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    height: 100px;
-}
-
-.commandLineHeader {
-    position: relative;
-    height: 20px;
-    width: 100%;
-    align-content: center;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    padding-top: 17px;
-    padding-left: 5px;
-    background: #38363f;
-    color: #ffffff;
-    font-family: monospace, sans-serif;
-    font-size: 10px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-}
-
 @media only screen and (max-width: 600px) {
+    .aboutLayout {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
 
+    }
+    .gridLeft {
+        width: 65%;
+        padding: 0;
+    }
+    .gridRight {
+        width: 67%;
+        padding: 0;
+    }
+    .titleText{
+        font-size: 70px;
+    }
+    .subText {
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
 .index-module_type__E-SaG {
