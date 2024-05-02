@@ -112,12 +112,12 @@ export const Skills = () => {
                     </div>
                 </motion.div>
 
-                <motion.div className={`card ${styles.card}`} style={{height: "230px"}} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }}
+                <motion.div className={`card ${styles.card}`} style={{height: "230px"}} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} data-bs-theme="dark"
                             transition={{
                                 duration: 0.3,
                                 delay: 0,
                                 ease: [0, 0.71, 0.2, 1.01]
-                            }} data-bs-theme="dark">
+                            }}>
                     <div className="card-body">
                         <h5 className="card-title"><code>C/C++</code></h5>
                         <h6 className="card-subtitle mb-2 text-muted">1 Year of Experience</h6>
