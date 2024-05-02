@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.button{
+    display: inline-block;
+    margin-top: 10%;
+}
+
 .subText{
     position: relative;
     justify-content: center;
@@ -9,52 +14,15 @@
     font-size: 20px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 300;
-}
-
-.canvasContainer::before{
-    content: "";
-    position: fixed;
-    width: 50px;
-    height: 121%;
-    top: -10%;
-    left: 60%;
-    right: 0;
-    bottom: -10%;
-    z-index: 2;
-    box-shadow: inset 10px 0 10px -2px rgba(0,0,0,1);
-}
-
-.canvas1{
-    top: -15%;
-    height: 125%;
-    width: 65%;
-    float:right;
-    position:fixed;
-    z-index: 0;
-    /*box-shadow: inset 10px 10px 10px 10px rgba(255, 255, 0, 0.2);*/
-}
-
-.contentRight {
-    left: 60%;
-    margin-right: 60%;
-    float: right;
-}
-
-.contentLeft{
-    right: 40%;
-    margin-left: 40%;
-    float: left;
-    padding-right: 10px;
+    font-weight: 350;
 }
 
 .titleText{
     display: flex;
-    margin-right: 40%;
     color: #ffffff;
     text-align: left;
     font-family: Montserrat, sans-serif;
-    font-size: 130px;
+    font-size: 150px;
     font-style: normal;
     font-variant: normal;
     font-weight: 900;
@@ -71,7 +39,18 @@
 
 .aboutLayout {
     position: relative;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    grid-area: auto;
+}
+
+.gridLeft {
+    grid-column: 1 / span 2; /* make this item span two columns */
+}
+
+.gridRight {
+
 }
 
 .commandLine{
@@ -101,35 +80,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .canvas1{
-        z-index: -1;
-        left: 0;
-        padding: 0;
-        height: 50%;
-        margin-top: 50%;
 
-    }
-    .canvasContainer::before{
-        content: "";
-        visibility: hidden;
-    }
-    .titleText {
-        font-size: 60px;
-        margin: 0 0 0;
-        text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-    }
-
-    .contentRight{
-        width: 100%;
-    }
-    .contentLeft{
-        width: 100%;
-    }
-    .subText{
-        margin-top: 60%;
-        text-align: center;
-        padding: 0;
-    }
 }
 
 .index-module_type__E-SaG {

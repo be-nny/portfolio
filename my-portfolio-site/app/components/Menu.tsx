@@ -23,9 +23,6 @@ export const Menu = () => {
                             <i className={"bi bi-linkedin"}/>
                         </Nav.Link>
                     </Nav>
-                    <Nav className="ml-auto">
-                        <Nav.Link className={"small"} href={"https://sketchfab.com/3d-models/planet-earth-bce3ea48781c4f02a8c52d2678220d07"}>Model</Nav.Link>
-                    </Nav>
                 </Container>
             </Navbar>
         </>
