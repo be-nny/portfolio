@@ -31,6 +31,7 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 350;
+    padding-top: 5px;
 }
 
 .titleText{
@@ -62,11 +63,10 @@
 }
 
 .gridLeft {
-    grid-column: 1 / span 2; /* make this item span two columns */
 }
 
 .gridRight {
-
+    grid-column: 2 / span 2; /* make this item span two columns */
 }
 
 @media only screen and (max-width: 600px) {
@@ -75,12 +75,10 @@
         grid-gap: 20px;
     }
     .gridLeft {
-        width: 65%;
-        padding: 0;
+        grid-column: 1;
     }
     .gridRight {
-        width: 67%;
-        padding: 0;
+        grid-column: 1;
     }
     .titleText{
         font-size: 50px;
