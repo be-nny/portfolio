@@ -1,6 +1,5 @@
 import styles from './Projects.module.css';
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
@@ -21,7 +20,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Python</code>, <code>CSS</code>, <code>Django</code>, <code>JavaScript</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/proj-iSABEL">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/proj-iSABEL" rel="noopener noreferrer" target="_blank">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
 
@@ -38,7 +37,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Python</code>, <code>Keras</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/CCD-keras">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/CCD-keras" rel="noopener noreferrer" target="_blank">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
 
@@ -56,7 +55,7 @@ export const Projects = () =>{
                     <ListGroup.Item><code>Java</code>, <code>OpenCV</code></ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="https://github.com/be-nny/connect-four-robot">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
+                    <Card.Link href="https://github.com/be-nny/connect-four-robot" rel="noopener noreferrer" target="_blank">See code <i className="bi bi-box-arrow-up-right"></i></Card.Link>
                 </Card.Body>
             </Card>
         </div>

@@ -112,7 +112,7 @@ export const LandingPage = () => {
                     <div className={`d-grid gap-1 ${styles_landing.button}`}>
                         <Button variant="outline-primary rounded-pill" size="lg" href={'mailto:ben.abbott1717@gmail.com'}>Lets Connect!</Button>{' '}
                         <div className={`${styles_landing.contactText}`}>
-                            Visit my <a href={"https://github.com/be-nny"}>GitHub</a> | <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"}>LinkedIn</a>
+                            Visit my <a href={"https://github.com/be-nny"} rel="noopener noreferrer" target="_blank">GitHub</a> | <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"} rel="noopener noreferrer" target="_blank">LinkedIn</a>
                         </div>
                     </div>
                 </div>
