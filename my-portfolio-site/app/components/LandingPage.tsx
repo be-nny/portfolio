@@ -36,26 +36,35 @@ export const LandingPage = () => {
     }, []);
     return(
         <>
-            <h1 className={styles_landing.titleText}>
-                Hey, <br/>I'm Ben.
-                <motion.span
-                    key={typingStatusLanguage}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{
-                        duration: 1,
-                    }}>
-                    <em><br/>{typingStatusLanguage}</em>
-                </motion.span>
-            </h1>
+            <motion.div
+                initial={{ opacity: 0 , y: -50}}
+                animate={{ opacity: 1 , y: 0}}
+                transition={{ duration: 1}}
+            >
+                <h1 className={styles_landing.titleText}>
+                    Hey, <br/>I'm Ben.
+                    <motion.span
+                        className={styles_landing.extensionName}
+                        key={typingStatusLanguage}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1}}
+                        exit={{ opacity: 0}}
+                        transition={{
+                            duration: 0.8,
+                        }}
+                    >
+                        <em><br/>{typingStatusLanguage}</em>
+                    </motion.span>
+                </h1>
+            </motion.div>
+
             <div className={styles_hello_world.container}>
                 <div>
                     <code className={`${styles_hello_world.text}`} >
                         <TypeAnimation
                             sequence={[
                                 () => {
-                                    setTypingStatusLanguage('c');
+                                    setTypingStatusLanguage('cpp');
                                 },
                                 'printf("%s\\n", "Hey, I\'m ben");',
                                 800,
@@ -97,7 +106,7 @@ export const LandingPage = () => {
                 <motion.span
                     initial={{ opacity: 0 , x: -50}}
                     animate={{ opacity: 1 , x: 0}}
-                    transition={{ duration: 1}}
+                    transition={{ duration: 0.8, delay: 0.3}}
                 >
                     <div className={styles_landing.gridLeft}>
                     <pre>
@@ -110,10 +119,10 @@ export const LandingPage = () => {
 
 
                 <div className={styles_landing.gridRight}>
-                    <motion.span
-                        initial={{ opacity: 0 , x: 50}}
-                        animate={{ opacity: 1 , x: 0}}
-                        transition={{ duration: 2}}
+                    <motion.div
+                        initial={{ opacity: 0}}
+                        animate={{ opacity: 1}}
+                        transition={{ duration: 2, delay: 0.8}}
                     >
                         <div className={`${styles_landing.subText}`}>
                             Hey, I'm a 2nd year computer science student at the University of Exeter.
@@ -122,11 +131,11 @@ export const LandingPage = () => {
                             I've always been interested in computer science from starting in scratch to building my first computer when I was 12!
                             One of my great passions is music so I try and find ways of interweaving computer science and music together.
                         </div>
-                    </motion.span>
+                    </motion.div>
 
-                    <motion.span
-                        initial={{ opacity: 0}}
-                        whileInView={{ opacity: 1}}
+                    <motion.div
+                        initial={{ opacity: 0, bottom: "-100%" }}
+                        whileInView={{ opacity: 1 , bottom: 0}}
                         transition={{ duration: 2}}
                     >
                         <div className={`d-grid gap-1 ${styles_landing.button}`}>
@@ -135,7 +144,7 @@ export const LandingPage = () => {
                                 Visit my <a href={"https://github.com/be-nny"} rel="noopener noreferrer" target="_blank">GitHub</a> | <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"} rel="noopener noreferrer" target="_blank">LinkedIn</a>
                             </div>
                         </div>
-                    </motion.span>
+                    </motion.div>
                 </div>
             </div>
         </>
