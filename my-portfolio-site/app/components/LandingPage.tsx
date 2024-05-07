@@ -6,6 +6,7 @@ import styles_hello_world from './helloWorld.module.css';
 import React, {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button'
 import { TypeAnimation } from 'react-type-animation';
+import {ControlledCarousel} from "@/app/components/carousel";
 
 export const LandingPage = () => {
     const [typingStatusLanguage, setTypingStatusLanguage] = useState('.c');
@@ -42,7 +43,7 @@ export const LandingPage = () => {
                 transition={{ duration: 1}}
             >
                 <h1 className={styles_landing.titleText}>
-                    Hey, <br/>I'm Ben.
+                    Hey, I'm Ben.
                     <motion.span
                         className={styles_landing.extensionName}
                         key={typingStatusLanguage}
@@ -53,14 +54,16 @@ export const LandingPage = () => {
                             duration: 0.8,
                         }}
                     >
-                        <em><br/>{typingStatusLanguage}</em>
+                        <em>{typingStatusLanguage}</em>
                     </motion.span>
                 </h1>
             </motion.div>
-
+            <h1 className={styles_landing.titleText} style={{color: "#b6b6b6", fontSize:"100px", fontWeight: "800"}}>
+                i build stuff.
+            </h1>
             <div className={styles_hello_world.container}>
                 <div>
-                    <code className={`${styles_hello_world.text}`} >
+                    <code className={`${styles_hello_world.text}`} style={{visibility:"hidden"}}>
                         <TypeAnimation
                             sequence={[
                                 () => {
@@ -100,7 +103,6 @@ export const LandingPage = () => {
                         />
                     </code>
                 </div>
-                <br/>
             </div>
             <div className={styles_landing.aboutLayout}>
                 <motion.span
@@ -145,6 +147,16 @@ export const LandingPage = () => {
                     </div>
                 </motion.div>
             </div>
+            {/*<motion.div*/}
+            {/*    initial={{ opacity: 0, y: 50}}*/}
+            {/*    whileInView={{ opacity: 1 , y: 0}}*/}
+            {/*    transition={{ duration: 1}}*/}
+            {/*>*/}
+            {/*<h1 className={styles_landing.subTitle}>*/}
+            {/*    Featured*/}
+            {/*</h1>*/}
+            {/*</motion.div>*/}
+            <br/>
         </>
     );
 }
