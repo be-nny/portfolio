@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "@/app/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
+import {MovingBackground} from "@/app/components/movingBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
