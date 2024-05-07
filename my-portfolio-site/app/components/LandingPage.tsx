@@ -6,7 +6,7 @@ import styles_hello_world from './helloWorld.module.css';
 import React, {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button'
 import { TypeAnimation } from 'react-type-animation';
-import {ControlledCarousel} from "@/app/components/carousel";
+// import {ControlledCarousel} from "@/app/components/carousel";
 
 export const LandingPage = () => {
     const [typingStatusLanguage, setTypingStatusLanguage] = useState('.c');
