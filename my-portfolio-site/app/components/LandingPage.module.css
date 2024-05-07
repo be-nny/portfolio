@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .button{
+    display: block;
     position: absolute;
     bottom: 2%;
-    width: 50%;
-    padding: 1px;
+    width: 100%;
+    padding: 10px;
 }
 
 .extensionName {
@@ -36,7 +37,7 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 350;
-    padding-top: 5px;
+    padding: 10px;
 }
 
 .titleText{
@@ -62,16 +63,25 @@
 .aboutLayout {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     grid-area: auto;
 }
 
 .gridLeft {
+    grid-column: 1;
 }
 
 .gridRight {
-    grid-column: 2 / span 2; /* make this item span two columns */
+    grid-column: 2;
+    height: 97%;
+    margin: 10px;
+    background: rgba(134, 132, 132, 0.16);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media only screen and (max-width: 600px) {

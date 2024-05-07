@@ -117,35 +117,33 @@ export const LandingPage = () => {
                     </div>
                 </motion.span>
 
-
-                <div className={styles_landing.gridRight}>
-                    <motion.div
-                        initial={{ opacity: 0}}
-                        animate={{ opacity: 1}}
-                        transition={{ duration: 2, delay: 0.8}}
-                    >
-                        <div className={`${styles_landing.subText}`}>
-                            Hey, I'm a 2nd year computer science student at the University of Exeter.
-                            My strengths are <strong>back-end</strong> and <strong>full-stack development</strong>.
-                            I'm experienced in the DevOps setting using agile and scrum development strategies.
-                            I've always been interested in computer science from starting in scratch to building my first computer when I was 12!
-                            One of my great passions is music so I try and find ways of interweaving computer science and music together.
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, bottom: "-100%" }}
-                        whileInView={{ opacity: 1 , bottom: 0}}
-                        transition={{ duration: 2}}
-                    >
-                        <div className={`d-grid gap-1 ${styles_landing.button}`}>
-                            <Button variant="outline-primary rounded-pill" size="lg" href={'mailto:ben.abbott1717@gmail.com'}>Lets Connect!</Button>{' '}
-                            <div className={`${styles_landing.contactText}`}>
-                                Visit my <a href={"https://github.com/be-nny"} rel="noopener noreferrer" target="_blank">GitHub</a> | <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"} rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                <motion.div
+                    initial={{ opacity: 0}}
+                    animate={{ opacity: 1}}
+                    transition={{ duration: 2, delay: 0.8}}
+                >
+                    <div className={styles_landing.gridRight}>
+                            <div className={`${styles_landing.subText}`}>
+                                Hey, I'm a 2nd year computer science student at the University of Exeter.
+                                My strengths are <strong>back-end</strong> and <strong>full-stack development</strong>.
+                                I'm experienced in the DevOps setting using agile and scrum development strategies.
+                                I've always been interested in computer science from starting in scratch to building my first computer when I was 12!
+                                One of my great passions is music so I try and find ways of interweaving computer science and music together.
                             </div>
-                        </div>
-                    </motion.div>
-                </div>
+                        <motion.div
+                            initial={{ opacity: 0, bottom: "-100%" }}
+                            whileInView={{ opacity: 1 , bottom: 0}}
+                            transition={{ duration: 2}}
+                        >
+                            <div className={`d-grid gap-1 ${styles_landing.button}`}>
+                                <Button variant="outline-primary rounded-pill" size="lg" href={'mailto:ben.abbott1717@gmail.com'}>Lets Connect!</Button>{' '}
+                                <div className={`${styles_landing.contactText}`}>
+                                    Visit my <a href={"https://github.com/be-nny"} rel="noopener noreferrer" target="_blank">GitHub</a> | <a href={"https://www.linkedin.com/in/ben-abbott-789034262/"} rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                </motion.div>
             </div>
         </>
     );
