@@ -59,7 +59,15 @@ export const LandingPage = () => {
                 </h1>
             </motion.div>
             <h1 className={styles_landing.titleText} style={{color: "#b6b6b6", fontSize:"100px", fontWeight: "800"}}>
-                i build stuff.
+                <TypeAnimation
+                    sequence={[
+                        'i build stuff.',
+                        1000,
+                    ]}
+                    wrapper="span"
+                    speed={25}
+                    cursor={false}
+                />
             </h1>
             <div className={styles_hello_world.container}>
                 <div>
