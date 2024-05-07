@@ -2,14 +2,8 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Image1 from '@/public/images/iSABEL logo (dark).png'
 export const ControlledCarousel = () => {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex) => {
-        setIndex(selectedIndex);
-    };
-
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="light">
+        <Carousel data-bs-theme="light">
             <Carousel.Item>
                 <img src={'/images/isabel_poster_1.png'} width={'50%'} />
                 <Carousel.Caption>
