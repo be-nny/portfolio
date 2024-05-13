@@ -7,30 +7,31 @@ import React, {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button'
 import { TypeAnimation } from 'react-type-animation';
 import { scroll } from "framer-motion/dom";
-
 import {ControlledCarousel} from "@/app/components/carousel";
+
 export const LandingPage = () => {
 
     const [typingStatusLanguage, setTypingStatusLanguage] = useState('c');
 
-    scroll((progress) => {
-        if (0 <= progress && progress < 0.1) {
-            setTypingStatusLanguage("cpp");
-        } else if (0.1 <= progress && progress < 0.2) {
-            setTypingStatusLanguage('py');
-        } else if (0.2 <= progress && progress < 0.3) {
-            setTypingStatusLanguage('java');
-        } else if (0.3 <= progress && progress < 0.4) {
-            setTypingStatusLanguage('js');
-        } else if (0.4 <= progress && progress < 0.5) {
-            setTypingStatusLanguage('c');
-        } else if (0.5 <= progress && progress < 0.6) {
-            setTypingStatusLanguage('sh');
-        } else{
+    useEffect(() => {
+        scroll((progress) => {
+            if (0 <= progress && progress < 0.1) {
+                setTypingStatusLanguage("cpp");
+            } else if (0.1 <= progress && progress < 0.2) {
+                setTypingStatusLanguage('py');
+            } else if (0.2 <= progress && progress < 0.3) {
+                setTypingStatusLanguage('java');
+            } else if (0.3 <= progress && progress < 0.4) {
+                setTypingStatusLanguage('js');
+            } else if (0.4 <= progress && progress < 0.5) {
+                setTypingStatusLanguage('c');
+            } else if (0.5 <= progress && progress < 0.6) {
+                setTypingStatusLanguage('sh');
+            } else{
 
-        }
-    });
-
+            }
+        });
+    })
 
     const aboutMeJson = `{
     "name": "Ben Abbott",
