@@ -9,8 +9,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { scroll } from "framer-motion/dom";
 
 import {ControlledCarousel} from "@/app/components/carousel";
-import {inspect} from "util";
-import styles = module
 export const LandingPage = () => {
 
     const [typingStatusLanguage, setTypingStatusLanguage] = useState('c');
