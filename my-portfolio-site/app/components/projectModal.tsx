@@ -7,7 +7,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Stack from 'react-bootstrap/Stack';
 
-export function ProjectModal(props){
+interface ProjectModalProps{
+    show: boolean;
+    onHide: () => void;
+    content: any;
+}
+
+
+export function ProjectModal(props: ProjectModalProps){
     return(
         <>
             <Modal
@@ -16,8 +23,9 @@ export function ProjectModal(props){
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
-                scrollable="true"
+                scrollable={true}
             >
+
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter" style={{color:"white"}}>
                         {props.content.name}

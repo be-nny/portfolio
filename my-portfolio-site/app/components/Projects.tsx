@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import {ProjectModal} from "@/app/components/projectModal";
 
+
 export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [modalContent, setModalContent] = React.useState(0);
@@ -43,7 +44,7 @@ export const Projects = () => {
         ]
     }
 
-    const setModal = (projectNum) =>{
+    const setModal = (projectNum : number) =>{
         setModalShow(true);
         setModalContent(projectNum);
     }
