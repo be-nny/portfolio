@@ -1,3 +1,5 @@
+'use client';
+
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
@@ -12,7 +14,6 @@ interface ProjectModalProps{
     onHide: () => void;
     content: any;
 }
-
 
 export function ProjectModal(props: ProjectModalProps){
     return(

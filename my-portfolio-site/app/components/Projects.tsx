@@ -1,18 +1,15 @@
-import styles from './Projects.module.css';
-import React, {Component, useEffect, useState} from "react";
+'use client';
+
+import React from "react";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-
-import ListGroup from 'react-bootstrap/ListGroup';
 import {ProjectModal} from "@/app/components/projectModal";
-
 
 export const Projects = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const [modalContent, setModalContent] = React.useState(0);
-
 
     const projectObj = {
         "projects": [

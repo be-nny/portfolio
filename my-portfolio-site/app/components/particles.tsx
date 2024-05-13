@@ -1,7 +1,9 @@
-import { useCallback } from "react";
+'use client';
+
+import {useCallback} from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim";
 
 export const MyParticles = () => {
     const particlesInit = useCallback(async (engine: Engine) => {

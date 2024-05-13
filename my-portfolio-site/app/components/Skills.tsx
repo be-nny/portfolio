@@ -1,6 +1,7 @@
+'use client';
+
 import styles from './Skills.module.css';
 import { motion } from "framer-motion";
-import Card from 'react-bootstrap/Card';
 import React from "react";
 
 export const Skills = () => {
