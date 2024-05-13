@@ -1,0 +1,15 @@
+.featuredImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 10%;
+    transition: transform .5s;
+}
+
+.featuredImage:hover {
+    transform: scale(1.05);
+}
+
+.carouselContainer {
+}
