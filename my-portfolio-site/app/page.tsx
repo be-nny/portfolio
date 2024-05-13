@@ -14,6 +14,5 @@ export default function Home() {
             <LandingPage/>
         </div>
     </div>
-
     );
 }
